@@ -4,6 +4,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body::before {
@@ -45,16 +48,9 @@ button:hover {
     background-color: #30475e;
     color: #fff;
 }
-.flex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 30vh;
-}
+
 .grid{
-    margin: 0px 10px 0px 10px;
+    /* margin: 0px 10px 0px 10px; */
     text-align: center;
     display: grid;
     grid-template-columns: 120vh 50vh;
@@ -67,7 +63,7 @@ button:hover {
     background-color:#F4F4F2;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    height: 600px;
+    max-height: 600px;
 }
 .svgFlex{
     display: flex;
@@ -77,12 +73,14 @@ button:hover {
 }
 .grid2{
     padding: 10px;
+    position: relative;
     background-color:#E8E8E8;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     display: flex;
+    max-height: 600px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .temp{
@@ -95,6 +93,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
 }
 .rain{
     display: flex;
@@ -143,11 +142,14 @@ button:hover {
   }
   .grid2boxes{
     display: flex;
+    position: absolute;
+    bottom: 0;
     flex-wrap: wrap;
     gap: 5px;
     text-align: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 20px;
   }
   .box2{
     width: 70px;
