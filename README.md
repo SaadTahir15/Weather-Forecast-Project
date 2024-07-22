@@ -30,5 +30,8 @@ Backend Structure:
    * GET /: Route to render the home.html page for searching weather information.
    * POST /: Endpoint to receive city name input, fetch weather data, and render it using the.ejs template.
 
+ 
+FINAL PROJECT
+=
 
 I am using the "https://dribbble.com/shots/15524720-Weather-web-app" template from Masood Ahmad as inspiration for the design of this project.
